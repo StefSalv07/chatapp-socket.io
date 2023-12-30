@@ -1,0 +1,28 @@
+steps to achieve implementation of socket.io with chat app
+ 
+ what is web socket
+ Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server.
+1. npm i socket.io
+2. import 
+3. const socket = require("socket.io")(Server AKA PORT details)// this is mandatory to pass as server constructer
+4. establish connection with event listener
+5. use io.on()// to on the socket evnet
+    you can see 2 options connect and connection select connection
+6. create a js file for calling the events
+7. in index.html the file which is shown on browser 
+    write script 
+                This line of code is used to include the Socket.IO client-side library in your HTML file.
+
+        Socket.IO is a JavaScript library for real-time web applications. It enables real-time, bidirectional and event-based communication between the browser and the server. 
+
+        Here's what the line does:
+
+        - `<script>`: This is an HTML tag that you use to include JavaScript in your HTML file.
+        - `src="/socket.io/socket.io.js"`: This specifies the source of the JavaScript file. In this case, it's loading the `socket.io.js` file from the `/socket.io` path on the server. This path is automatically served by the Socket.IO server-side library.
+
+        So, this line is necessary if you want to use Socket.IO in your client-side JavaScript code.
+
+
+7.for front end create a main.js file 
+    now create a instance as shown below
+        const socket = io(pass connection url and a call back funtion )
